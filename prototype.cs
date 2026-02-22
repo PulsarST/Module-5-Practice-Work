@@ -8,7 +8,7 @@ public class Character(Weapon weapon, Armor armor, Skill skill) : ICloneable
 
     public object Clone()
     {
-        return new Character(Weapon, Armor, Skill);
+        return new Character((Weapon)Weapon.Clone(), (Armor)Armor.Clone(), (Skill)Skill.Clone());
     }
 }
 
