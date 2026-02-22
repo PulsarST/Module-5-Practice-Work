@@ -8,6 +8,9 @@ public class Logger
     private static Logger? instance;
     public LoggerLevel Level { get; set; }
 
+    private Logger()
+    { }
+
     public static Logger GetInstance()
     {
         instance ??= new Logger();
